@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Raylane Saraiva - Link na Bio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Cores personalizadas e fontes */
+        :root {
+            --color-light-pink: #F8E8E8; /* Rosa claro/nude */
+            --color-white: #FFFFFF;
+            --color-beige: #F5F5DC; /* Bege suave */
+            --color-soft-gold: #D4AF37; /* Dourado suave */
+            --color-text-dark: #4A4A4A; /* Cinza escuro para texto */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-light-pink);
+            color: var(--color-text-dark);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Alinha ao topo */
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: var(--color-white);
+            border-radius: 1.5rem; /* Bordas mais arredondadas */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 400px; /* Largura ideal para Link na Bio */
+            width: 100%;
+            padding: 2.5rem 1.5rem; /* Mais padding interno */
+            text-align: center;
+            margin-top: 20px; /* Espaço do topo */
+        }
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 2.25rem; /* Tamanho maior para o logo */
+            color: var(--color-soft-gold);
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+        .subtitle-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: var(--color-text-dark);
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+        .button-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-beige);
+            color: var(--color-text-dark);
+            padding: 1rem 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 0.75rem; /* Bordas arredondadas para botões */
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(212, 175, 55, 0.3); /* Borda dourada suave */
+        }
+        .button-link:hover {
+            background-color: var(--color-soft-gold);
+            color: var(--color-white);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+            transform: translateY(-2px);
+        }
+        .button-link svg {
+            margin-right: 0.75rem;
+            width: 24px;
+            height: 24px;
+            fill: currentColor; /* Ícone herda a cor do texto */
+        }
+        .footer-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.9rem;
+            color: var(--color-text-dark);
+            opacity: 0.7;
+            margin-top: 2rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 640px) {
+            .container {
+                padding: 2rem 1rem;
+                margin-top: 10px;
+            }
+            .logo-text {
+                font-size: 1.75rem;
+            }
+            .subtitle-text {
+                font-size: 0.9rem;
+            }
+            .button-link {
+                font-size: 1rem;
+                padding: 0.8rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="logo-text">Studio Raylane Saraiva</h1>
+            <p class="subtitle-text">Realce sua beleza com um olhar marcante. Atendimento com excelência e amor.</p>
+        </div>
+
+        <div class="links-section flex flex-col items-center">
+            <a href="https://wa.me/5594993055968?text=Ol%C3%A1%2C+gostaria+de+agendar+um+hor%C3%A1rio+no+Studio+Raylane+Saraiva!" target="_blank" class="button-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h2v-6h-2v6zm0-8h2V7h-2v2z"/>
+                </svg>
+                📅 Agende seu horário
+            </a>
+
+            <a href="https://placehold.co/800x600/F5F5DC/4A4A4A?text=Catalogo+de+Servicos" target="_blank" class="button-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                💖 Catálogo de serviços
+            </a>
+
+            <a href="https://maps.app.goo.gl/yU91xjjU1tykh4dGA?g_st=com.google.maps.preview.copy" target="_blank" class="button-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                📍 Como chegar no Studio
+            </a>
+
+            <a href="https://www.instagram.com/raylane_saraiva/" target="_blank" class="button-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2.2c-2.4 0-4.3 1.9-4.3 4.3v8.4c0 2.4 1.9 4.3 4.3 4.3h8.4c2.4 0 4.3-1.9 4.3-4.3V7.8c0-2.4-1.9-4.3-4.3-4.3H7.6zM12 6.5c-3.03 0-5.5 2.47-5.5 5.5s2.47 5.5 5.5 5.5 5.5-2.47 5.5-5.5-2.47-5.5-5.5-5.5zm0 9c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5zm6.5-11c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                </svg>
+                📸 Ver resultados no Instagram
+            </a>
+
+            <a href="https://wa.me/5594993055968?text=Ol%C3%A1%2C+gostaria+de+deixar+um+feedback+para+o+Studio+Raylane+Saraiva!" target="_blank" class="button-link">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
+                </svg>
+                💬 Deixe seu feedback
+            </a>
+        </div>
+
+        <p class="footer-text">Studio Raylane Saraiva</p>
+    </div>
+</body>
+</html>
